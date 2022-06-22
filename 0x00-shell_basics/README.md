@@ -1,1 +1,2 @@
-Readme it begins
+#!/bin/bash
+My first ReadMe
