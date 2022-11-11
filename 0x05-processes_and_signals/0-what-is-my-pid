@@ -3,4 +3,4 @@
 # This script displays its own PID
 
 
-795
+echo $$
