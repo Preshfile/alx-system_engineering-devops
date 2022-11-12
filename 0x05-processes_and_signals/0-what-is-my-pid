@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 958
+=======
+#!/usr/bin/env bash
+# This script displays its own PID
+
+
+
+
+>>>>>>> a1a691edaccf457593db85de4b24d3f6777a8915
