@@ -26,6 +26,5 @@ frontend https-in
     default_backend servers
 
 backend servers
-    server web-01 54.172.64.75:443 check ssl verify none
+    server web-01 54.237.81.106:443 check ssl verify none
     server web-02 54.166.128.152:443 check ssl verify none
-
