@@ -1,7 +1,29 @@
 #!/usr/bin/env bash
 # Installs nginx server
-apt-get update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-echo "Hello World!" > /var/www/html/index.html
-service nginx start
+# Install Nginx
+sudo apt-get install nginx
+
+# Start Nginx
+sudo service nginx start
+
+# Verify Nginx is listening on port 80
+if [ "$(sudo netstat -tlpn | grep :80 | awk '{print $4}')" = "0.0.0.0:80" ]; then
+  echo "Nginx is listening on port 80"
+else
+  echo "Nginx is not listening on port 80"
+  exit 1
+fi
+
+# Verify Nginx response
+if [ "$(curl localhost | grep 'Welcome to nginx')" = "Welcome to nginx!" ]; then
+  echo "Nginx response is correct"
+else
+  echo "Nginx response is incorrect"
+  exit 1
+fi
+
+# Create a default index page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Restart Nginx
+sudo service nginx restart
