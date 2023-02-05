@@ -18,7 +18,7 @@ frontend http-in
     default_backend servers
 
 backend servers
-    server web-01 54.172.64.75:80 check
+    server web-01 54.90.22.249:80 check
     server web-02 54.166.128.152:80 check
     option httpchk GET /
     http-request set-header Host www.subdomain.com
