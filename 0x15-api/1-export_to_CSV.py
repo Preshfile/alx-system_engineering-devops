@@ -22,4 +22,3 @@ if __name__ == '__main__':
             file.write('"{}","{}","{}","{}"\n'
                        .format(employeeId, username, task.get('completed'),
                                task.get('title')))
-
