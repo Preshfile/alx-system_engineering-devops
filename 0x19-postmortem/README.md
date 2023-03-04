@@ -1,7 +1,7 @@
 
 <h1 style="text-align:center;">POSTMORTERM<h1>
 
-<img src="https://user-images.githubusercontent.com/79994012/222897404-46e44811-9982-427f-a4bc-2091d55ba7ce.png"  width="60%">
+<img src="https://user-images.githubusercontent.com/79994012/222900235-c1877778-e3ce-4796-a73c-f71568cc2348.jpg">
 
 <h3>ISSUE SUMMARY:<h3>
 <p>Duration: The outage lasted from March 1st, 2023 at 2:00 PM UTC to March 2nd, 2023 at 9:00 AM UTC.</p>
